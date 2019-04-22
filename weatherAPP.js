@@ -2,7 +2,9 @@ $(document).on("mobileinit", function(){
     $(function(){
         //array de las ciudades añadidas
         var cities = [];
-        
+        if (localStorage.length == 0){
+          localStorage.setItem("cities", JSON.stringify(cities));
+        }
         //código de la barra de búsqueda predictiva
         $( "#autocomplete" ).on( "filterablebeforefilter", function ( e, data ) {
               var $ul = $( this ),
@@ -79,14 +81,13 @@ $(document).on("mobileinit", function(){
               $( "#autocomplete" ).on( "click", ".elem" , function() {
                 
                 cities = JSON.parse(localStorage.getItem("cities"));
-                localStorage.setItem("cities", JSON.stringify(cities));
+                
 
                 let selected = $(this).html();
                 var res = selected.split(",");
                 var city = res[0];
 
                 cities.push(city);
-                console.log(cities);
                 localStorage.setItem("cities", JSON.stringify(cities));
                 
                 //llamada a la api con los datos necesarios
@@ -114,7 +115,6 @@ $(document).on("mobileinit", function(){
             //Recuperar datos de localStorage
             var cityrecov = JSON.parse(localStorage.getItem("cities"));
             var largoCR = cityrecov.length;
-            alert(largoCR);
             //recorro el array para ir añadiendo las cajas de ciudades guardadas
             for (let i = 0; i < largoCR; i++) {
 
