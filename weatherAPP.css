@@ -1,0 +1,247 @@
+body{
+  font-family: 'Aleo', serif;
+  color:white;
+}
+
+#add {
+    position: fixed;
+    top:auto;
+    left:auto;
+    bottom: 35px;
+    right: 35px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50% !important;
+    z-index:50;
+  }
+
+.ui-filter-inset {
+    margin-top: 0;
+}
+
+.ciu{
+  width: calc(89vw/3);
+  background-color:#004d4d;
+  margin: 10px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  border-radius: 8px;
+  text-decoration:none;
+  transition:all 0.1s;
+}
+
+.ciudet{
+  width: auto;
+  height: 90vh;
+  background-color: #004d4d;
+  margin:10px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  border-radius: 8px;
+}
+
+.citycontent{
+  display:flex;
+  direction:row;
+  justify-content:space-around;
+}
+
+.ww{
+  width:50%;
+  background-color:lightseagreen;
+  margin:5px;
+  border-radius: 6px;
+  color:black;
+}
+
+.wwdet{
+  width: calc(100%/3);
+  background-color:lightseagreen;
+  margin:5px;
+  border-radius: 6px;
+  color:black;
+  height:85px;
+}
+
+.tempdesc{
+  display:flex;
+  flex-direction:column;
+}
+
+.tit{
+  font-size:100%;
+}
+
+.back{
+  margin:10px;
+  width:50px;
+  position:float;
+}
+
+.wicon{
+  margin: 10px;
+  height: 200px;
+}
+
+.wdet{
+  font-size:200%;
+}
+
+.nombciudet{
+  font-size: 250%;
+}
+
+.wicondet{
+  margin-top: 25px;
+  height: 300px;
+}
+
+#base{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.butdel{
+  top:5px;
+  right:5px;
+  position:absolute;
+}
+
+.details{
+  text-decoration:none;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 768px) {
+  
+  .ciu{
+    width: calc(85vw/3);
+    background-color:#004d4d;
+    margin: 10px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    border-radius: 8px;
+    text-decoration:none;
+  }
+
+  .wicondet{
+    margin-top: 15px;
+    height: 250px;
+  }
+
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  
+  .ciu{
+    width: calc(80vw/2);
+    background-color:#004d4d;
+    margin: 10px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    border-radius: 8px;
+    text-decoration:none;
+  }
+
+  .wicondet{
+    margin-top: 15px;
+    height: 250px;
+  }
+
+  .wicon{
+    margin: 10px;
+    height: 150px;
+  }
+  
+  .wdet{
+    font-size:150%;
+  }
+
+  .tit{
+    font-size:80%;
+  }
+
+  .butdel{
+    top:2px;
+    right:2px;
+    position:absolute;
+  }
+}
+
+
+
+@media screen and (max-width: 480px) and (max-height: 480px) {
+
+  .ciudet{
+    width: auto;
+    height: auto;
+    background-color: #004d4d;
+    margin:5px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    border-radius: 8px;
+  }
+
+  .ciu{
+    width: calc(82vw/2);
+    background-color:#004d4d;
+    margin: 5px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    position:relative;
+    border-radius: 8px;
+    text-decoration:none;
+  }
+
+  .nombciu{
+  font-size: 120%;
+  margin-top: 55px;
+}
+
+.wicon{
+  margin: 10px;
+  height: 100px;
+}
+
+.wicondet{
+  margin-top: 15px;
+  height: 150px;
+}
+
+.wdet{
+  font-size:150%;
+}
+
+.nombciudet{
+  font-size: 150%;
+}
+
+.tit{
+  font-size:60%;
+}
+
+p{
+  font-size:80%;
+}
+
+.ww{
+  width:50%;
+  background-color:lightseagreen;
+  margin:5px;
+  border-radius: 6px;
+  color:black;
+}
+
+.wwdet{
+  height: 60px;
+}
+
+}
